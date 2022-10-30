@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 98%;
+}
+
+.account-header {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    padding: 6px 12px;
+    border-bottom: 1px solid #e5e8eb;
+}
+
+.header-logo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.header-logo .logo-title {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    font-size: 22px;
+}
+
+.logo-title > span {
+    font-size: 16px;
+}
+
+.login-container {
+    margin: 26px auto;
+    width: 100%;
+    padding: .75rem;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 554px;
+    padding: 26px;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid #e5e8eb;
+}
+
+.login-title {
+    margin: 55px auto;
+    font-size: 26px;
+}
+
+.login-container #login-form {
+    background: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#login-form input[type="text"], input[type="password"], button {
+    width: 100%;
+    overflow: visible;
+}
+
+#login-form input:focus {
+    border-bottom: 2px solid skyblue;
+    transition: all 0.2s linear;
+}
+
+#login-form .id-input, .id-passowrd {
+    height: 44px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #8c8c8c;
+    line-height: 1.33;
+    font-size: 18px;
+    padding: 6px 12px;
+    transition: all 0.2s linear;
+}
+
+#login-form .btn {
+    border: none;
+    background: #84b6e8;
+    color: #ffffff;
+    border: 1px solid #84b6e8;
+    height: 44px;
+    font-size: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .5s all linear;
+}
+
+#login-form .btn:focus, .btn:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid skyblue;
+    transition: .5s all linear;
+}
+
+.account-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.accounting a{
+    color: #000;
+    border-bottom: 1px solid #e5e8eb;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 100%;
+}

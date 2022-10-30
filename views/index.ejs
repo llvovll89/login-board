@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD 게시판</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-title">|| User Board ||</div>
+        </header>
+        <div class="container board-container">
+            <div class="board-title">😁</div>
+            <div class="content">
+                <div class="list-head">
+                    <div class="list-tr">
+                        <span class="th th-num">No.</span>
+                        <span class="th th-title">글 제목</span>
+                        <span class="th th-user">아이디</span>
+                    </div>
+                </div>
+                <% for(let i =0; i < users.length; i++) { %>
+                <div class="list-body">
+                    <div class="body-tr">
+                        <div class="td td-num"><%= i + 1 %></div>
+                        <div class="td td-title"><a href="/view"><%= users[i].title %></a></div>
+                        <div class="td td-user"><%= users[i].user %></div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+            <div class="btn-class">
+                <button class="btn btn-search"><a href="/">검색</a></button>
+                <button class="btn btn-new"><a href="/new">게시물 작성하기</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- 제이쿼리 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/js/index.js"></script>
+</body>
+
+</html>

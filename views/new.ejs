@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD 게시판</title>
+    <link rel="stylesheet" type="text/css" href="/css/form.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-title">|| User Board ||</div>
+        </header>
+        <div class="container">
+            <div class="new-title">
+                <h1 class="title">글작성🐼</h1>
+                <span class="sm-title">Write Here</span>
+            </div>
+            <form action="/api/users" method="POST" id="new-form">
+                <div class="form-body">
+                    <label for="title">글 제목</label>
+                    <input type="text" name="title" required id="input-title" class="form-title" autocomplete="off"
+                        placeholder="글 제목 작성">
+                </div>
+
+                <div class="form-body">
+                    <label for="user">사용자</label>
+                    <input type="text" name="user" id="description" placeholder="User Name" autocomplete="off">
+                </div>
+
+                <div class="form-body">
+                    <label for="content">글 내용</label>
+                    <textarea name="content" id="markdown" class="form-desc" placeholder="내용을 적어주세요."></textarea>
+                </div>
+                <div class="btnclass add-btn">
+                    <button type="submit" class="btn btn-success">등록하기</button>
+                    <button class="back btn ">
+                        <a href="/" class="btn-cancel">취소</a>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

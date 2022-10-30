@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="account-header">
+            <div class="header-logo">
+                <div class="logo-title">HOSUNG<span>Account</span></div>
+            </div>
+        </div>
+        <div class="login-container">
+            <div class="content">
+                <div class="login-title">Hoes Board - Login</div>
+                <!-- form - method= "POST" 걸어야댐/ 각 input에 name도 달고 -->
+                <form id="login-form">
+                    <input type="text" class="id-input" placeholder="이메일 주소 또는 전화번호" required>
+                    <input type="password" class="id-passowrd" placeholder="password 입력" required>
+                    <div class="rememId">
+                        <input type="checkbox" class="remember">
+                        <label>ID기억하기</label>
+                    </div>
+                    <button class="btn next" type="submit">로그인</button>
+                    <div class="accounting">
+                        <a href="#">ID 찾기</a>
+                        <a href="#">계정 생성</a>
+                    </div>
+                    <div class="account-btn">
+                        <button class="btn login-btn" type="button">Google 계정 로그인</button>
+                        <button class="btn login-btn" type="button">QR 코드 로그인</button>
+                        <button class="btn login-btn" type="button">
+                            <a href="/">뒤로가기</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="logo"></div>
+                <address class="footer-address">Copyright © 2022 geonho Kim. All Rights Reserved.</address>
+                <div class="links"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

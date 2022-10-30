@@ -1,0 +1,118 @@
+@import '/css/style.css';
+
+:root {
+    --borderColor : #e5e8eb;
+}
+
+#new-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-title {
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.sm-title {
+    font-size: 14px;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 12px 0;
+}
+
+.container {
+    border: 1px solid var(--borderColor);
+    padding: 1rem;
+}
+
+.container .title {
+    margin: 10px;
+}
+
+.container .btn {
+    margin-left: 8px;
+}
+
+.box {
+    margin: 12px 6px;
+    border: 1px solid var(--borderColor);
+}
+
+.box-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.box-title {
+    font-size: 26px;
+    letter-spacing: .5px;
+    font-weight: bold;
+}
+
+.box-text {
+    font-size: 18px;
+    letter-spacing: .25px;
+}
+
+input[type="text"] {
+    height: 52px;
+    padding: 18px 12px;
+}
+
+.form-desc {
+    height: 120px;
+}
+
+input, textarea {
+    font-size: 16px;
+    outline: none;
+    border: 1px solid var(--borderColor);
+}
+
+input:focus, textarea:focus {
+    border: 1px solid skyblue;
+}
+
+.title {
+    margin: 6px 0;
+    font-size: 26px;
+}
+
+label {
+    margin: 4px 0;
+    font-size: 22px;
+}
+
+.btn {
+    text-align: center;
+    font-size: 20px;
+    width: 120px;
+    height: 52px;
+    border: 1px solid var(--borderColor);
+    cursor: pointer;
+    transition: .7s all;
+    color: #ffffff;
+}
+
+.btn > a {
+    width: 100%;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnclass {
+    display: flex;
+}
