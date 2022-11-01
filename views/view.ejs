@@ -12,17 +12,18 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <div class="header-title">|| User Board ||</div>
+            <div class="header-title">아르기닌 코리아</div>
         </header>
         <div class="container view-container">
             <div class="view-header">
-                <!-- header -->
-                <div class="list-head">
-                    <div class="list-body"></div>
-                    <button class="back btn ">
-                        <a href="/" class="btn-cancel">목록으로 돌아가기</a>
-                    </button>
+                <% for(let i =0; i < users.length; i++) { %>
+                <div class="view-body">
+                    <%= users[i].content %>
                 </div>
+                <% } %>
+                <button class="back btn ">
+                    <a href="/" class="btn-cancel">목록으로 돌아가기</a>
+                </button>
             </div>
         </div>
     </div>

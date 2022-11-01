@@ -13,7 +13,9 @@ exports.create = (req, res) => {
   const nuser = new Userdb({
     title: req.body.title,
     user: req.body.user,
-    content: req.body.content
+    content: req.body.content,
+    logID: req.body.logID,
+    password: req.body.password
   })
 
   // 사용자 저장 DB

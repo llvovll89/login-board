@@ -1,4 +1,4 @@
-<form id="login-form"> 
+<form id="login-form" action="/api/users" method="POST">
     <input type="text" class="id-input" placeholder="이메일 주소 또는 전화번호" required>
     <input type="password" class="id-passowrd" placeholder="password 입력" required>
     <div class="rememId">
@@ -11,7 +11,10 @@
         <a href="#">계정 생성</a>
     </div>
     <div class="account-btn">
-    <button class="btn login-btn" type="button">Google 계정 로그인</button>
-    <button class="btn login-btn" type="button">QR 코드 로그인</button>
-</div>
+        <button class="btn login-btn" type="button">Google 계정 로그인</button>
+        <button class="btn login-btn" type="button">QR 코드 로그인</button>
+        <button class="btn login-btn" type="button">
+            <a href="/">뒤로가기</a>
+        </button>
+    </div>
 </form>

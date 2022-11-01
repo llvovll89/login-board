@@ -32,6 +32,11 @@
     padding: 1rem;
 }
 
+.body-tr {
+    /* display: flex; */
+    flex-direction: column;
+} 
+
 .container .title {
     margin: 10px;
 }

@@ -11,9 +11,14 @@ const schema = new mongoose.Schema({
     unique : true
   },
   content: {
-    type: String,
-    required: true
+    type: String
   },
+  logID : {
+    type: String,
+  },
+  password : {
+    type: String,
+  }
 });
 
 const Userdb = mongoose.model('userdb', schema);
